@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+<BorderPane id="serverPane" fx:id="serverPane" prefHeight="400.0" prefWidth="300.0" fx:controller = "RootController"
+            stylesheets="@../CSS/GuiServer.css" xmlns:fx="http://javafx.com/fxml/1" >
+    <center>
+        <ListView fx:id="serverList" prefHeight="141.0" prefWidth="129.0" BorderPane.alignment="CENTER">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                </FXCollections>
+            </items>
+        </ListView>
+    </center>
+    <padding>
+        <Insets bottom="70" left="70" right="70" top="70" />
+    </padding>
+</BorderPane>
